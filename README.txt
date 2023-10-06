@@ -32,6 +32,15 @@ Agregar converters al archivo de configuraciones connect-standalone.properties
  - key.converter=org.apache.kafka.connect.storage.StringConverter
  - value.converter=org.apache.kafka.connect.storage.StringConverter
 
+Todos los converters son:
+
+ - org.apache.kafka.connect.converters.ByteArrayConverter
+ - org.apache.kafka.connect.storage.StringConverter
+ - org.apache.kafka.connect.json.JsonConverter
+ - io.confluent.connect.avro.AvroConverter
+ - io.confluent.connect.protobuf.ProtobufConverter
+ - io.debezium.converters.JsonConverter
+
 Agregar el puerto para la REST API de conectores
 
  - rest.port=8083
